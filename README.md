@@ -7,9 +7,9 @@
 **Open-source Python toolkit for water data, hydrology, and agricultural water management — with an AI engine that recommends and auto-executes research methodologies.**
 
 [![CI](https://github.com/Rekin226/aquascope/actions/workflows/ci.yml/badge.svg)](https://github.com/Rekin226/aquascope/actions/workflows/ci.yml)
-[![PyPI version](https://img.shields.io/pypi/v/aquascope.svg?color=blue)](https://pypi.org/project/aquascope/)
-[![PyPI downloads](https://img.shields.io/pypi/dm/aquascope.svg?color=blue)](https://pypi.org/project/aquascope/)
-[![Python](https://img.shields.io/pypi/pyversions/aquascope.svg?color=informational)](https://www.python.org/downloads/)
+[![PyPI version](https://img.shields.io/pypi/v/aquascope.svg?color=blue&cacheSeconds=300&v=2)](https://pypi.org/project/aquascope/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/aquascope.svg?color=blue&cacheSeconds=300&v=2)](https://pypi.org/project/aquascope/)
+[![Python](https://img.shields.io/pypi/pyversions/aquascope.svg?color=informational&cacheSeconds=300&v=2)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-261230.svg)](https://github.com/astral-sh/ruff)
 [![Tests](https://img.shields.io/badge/tests-534%20passing-brightgreen.svg)](#)
