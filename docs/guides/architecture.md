@@ -4,24 +4,45 @@
 
 AquaScope follows a modular, layered architecture designed for extensibility and researcher-friendly workflows.
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                     CLI / Python API                     │
-├───────────┬───────────┬──────────────┬──────────────────┤
-│ Collectors│ Analysis  │  Pipelines   │    AI Engine      │
-│           │           │              │                   │
-│ • MOENV   │ • EDA     │ • Mann-Kend. │ • Knowledge Base  │
-│ • WRA     │ • Quality │ • WQI / RPI  │   (26 methods)    │
-│ • USGS    │           │ • PCA+KMeans │ • Recommender     │
-│ • SDG6    │           │ • RandomFor. │   (rule + LLM)    │
-│ • GEMStat │           │ • XGBoost    │                   │
-│ • CivilIoT│           │ • ARIMA      │                   │
-│ • WQP     │           │ • Correlat.  │                   │
-├───────────┴───────────┴──────────────┴──────────────────┤
-│                   Unified Schemas (Pydantic)             │
-├─────────────────────────────────────────────────────────┤
-│                   Utilities (HTTP, Storage)               │
-└─────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph Interface["User Interface"]
+        CLI["CLI<br/>14 commands"]
+        API["Python API"]
+        DASH["Streamlit Dashboard<br/>7 pages"]
+    end
+
+    subgraph Intelligence["Intelligence Layer"]
+        AI["AI Engine<br/>26 methodologies"]
+        PIPE["Pipelines<br/>7 auto-executable"]
+        CHAL["Challenges<br/>flood / drought / WQ"]
+    end
+
+    subgraph Science["Scientific Core"]
+        HYD["Hydrology<br/>FFA · Baseflow · FDC · Signatures"]
+        AGRI["Agriculture<br/>FAO-56 ET₀ · Crop water · SWB"]
+        ANA["Analysis<br/>EDA · QA · Copulas · Changepoints"]
+        MODEL["Models<br/>Bayesian · Ensembles · LSTM · Transfer"]
+        SPATIAL["Spatial<br/>DEM · Watershed · Strahler"]
+    end
+
+    subgraph Data["Data Layer"]
+        COL["Collectors · 12 sources<br/>Taiwan · USA · Global · FAO"]
+        SCHEMA["Unified Pydantic Schemas"]
+        IO["Scientific I/O<br/>WaterML · HEC · SWMM · NetCDF · HDF5"]
+    end
+
+    subgraph Output["Output"]
+        VIZ["Viz · 16 plots + Q-Q/P-P diagnostics"]
+        REP["Reports · Markdown + HTML"]
+        ALERT["Alerts · WHO · EPA · EU WFD"]
+    end
+
+    Interface --> Intelligence
+    Intelligence --> Science
+    Science --> Data
+    Science --> Output
+    Data --> SCHEMA
 ```
 
 ## Layer Descriptions
