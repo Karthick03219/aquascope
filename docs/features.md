@@ -1,6 +1,6 @@
 # Features
 
-Complete capability reference for AquaScope. For installation and a quick example, see the [README](../README.md). For data-source details, see [docs/data_sources.md](data_sources.md).
+Complete capability reference for AquaScope. For installation and a quick example, see the [Getting started](getting_started.md) guide. For data-source details, see [Data sources](data_sources.md).
 
 ---
 
