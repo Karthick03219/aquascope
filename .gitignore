@@ -38,3 +38,7 @@ htmlcov/
 # Environment
 .env
 .env.local
+
+# MkDocs build output + plugin cache
+site/
+.cache/
