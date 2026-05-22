@@ -24,6 +24,8 @@
 [**Roadmap**](ROADMAP.md) ·
 [**Discussions**](https://github.com/Rekin226/aquascope/discussions)
 
+[![Support on Ko-fi](https://img.shields.io/badge/Support%20AquaScope-Ko--fi-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/getaquascope) if AquaScope helps your research.
+
 </div>
 
 ---
